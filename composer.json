@@ -1,0 +1,39 @@
+{
+    "name": "psc-acme/module-user",
+    "description": "Package module-user for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ModuleUser\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "predis/predis": "^2.0",
+        "psr/container": "^2.0",
+        "symfony/event-dispatcher": "^7.0",
+        "symfony/validator": "^7.0",
+        "doctrine/orm": "^3.0"
+    },
+    "require-dev": {
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
